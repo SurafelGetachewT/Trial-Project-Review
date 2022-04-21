@@ -21,7 +21,40 @@
     - The freeCodeCamp Team
 
     -->
-    <p>Hello World, we are software developers!</p>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id ="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+        <label id= "name-label" for="name">name</label>
+        <input id ="name" type ="text" name="name" required placeholder="Enter your name"/>
+        <label id= "email-label" for="email">email</label>
+        <input id ="email" type ="email" name="Email" required placeholder="Enter your email"/>
+        <label id= "number-label" for="age">Age</label>
+        <input id ="number" type ="number" name="Age" min="10" max ="99" required placeholder="Enter your age"/>
+        </div>
+        <div class="form-group">
+          <p> Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+           <option value="Student">Student</option>
+           <option value="Job">Fulltime Job</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p> Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input name="user-recommend" value="Definetly" type="radio" class="input-radio" checked> "Definetly"
+          </label>
+          <label>
+            <input name="user-recommend" value="Maybe" type="radio" class="input-radio" checked> "Maybe"
+          </label>
+        </div>
+      </form>  
+    </div>
+
 
     <script  src="js/index.js"></script>
   </body>
